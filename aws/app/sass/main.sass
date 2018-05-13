@@ -1,0 +1,400 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	
+.header-tabled
+	display: none
+	
+.scrollTop
+	position: fixed
+	top: 0
+	margin-top: 0!important 
+	z-index: 100
+	width: 100%
+	&.header-tabled
+		.container
+			background-color: #FFF
+	.mob-menu
+		margin-top: 0
+
+header
+	padding: 30px 0px
+	.logo
+		padding-left: 10px
+	.search
+		padding-top: 15px
+		position: relative
+		div
+			padding: 0
+			input
+				width: 93.7%
+				margin-left: 10px
+				height: 35px
+				padding-left: 15px
+				border: 1px solid #a1a1a1
+				border-radius: 2px
+				font-family: 'opensans'
+			button
+			    height: 33px
+			    width: 76px
+			    position: absolute
+			    right: 16px
+			    top: 1px
+			    border: none
+			    background-color: #0049b0
+			    color: #fff
+			    border-radius: 2px 
+			    font-size: 18px
+	
+	.menu
+		margin-top: 28px
+		background-color: #f4f5f7  
+		nav
+			ul
+				margin: 0
+				padding: 0
+				padding-left: 13px
+				display: flex
+				justify-content:  space-between
+				li
+					display: inline-block
+					width: 100%
+					text-align: center
+					a
+						color: #202020
+						padding: 18.5px 40px
+						display: block
+						font-weight: 700
+						text-transform: uppercase 
+						&:hover
+							color: #0049B0
+							text-decoration: none
+							background-color: #eaecf0 
+
+.s-body
+	margin-top: 43px 
+	h1
+		font-size: 36px
+		color: #303030
+		font-family: 'roboto', sans-serif  
+		text-align: center
+		font-weight: 400 
+	.buttons-wrap
+		margin-top: 40px
+		text-align: center
+		padding-left: 15px
+		margin-bottom: 73px
+		button
+			text-transform: uppercase
+			font-family: 'montserrat'
+			padding: 11.5px 20px
+			margin-right: 13px
+			letter-spacing: 0.3px 
+			&.btn-primary
+				background-color: #0049b0
+			&.btn-default
+				color: #0049B0
+				border-color: #0049B0 
+			&.btn-success
+				background-color: #34bf49
+			&.btn-warning
+				background-color: #f49a9e
+			&.btn-danger
+				background-color: #ed1c24 
+	.inputs-wrap
+		display: flex
+		justify-content:  space-between
+		font-family: 'opensans' 
+		font-size: 15px
+		font-weight: 400 
+		color: #5E5D5C
+		margin-top: 32px
+		margin-bottom: 70px
+		.checkbox-wrap
+			padding-left: 52px
+			.checkbox
+				position: relative
+				input[type=checkbox]
+					display: none
+				label
+					&:before
+						content: ""
+						border: 1px solid #464646
+						color: #31a5e7
+						position: absolute
+						left: -9px
+						width: 14px
+						height: 14px
+						font-size: 12px
+						text-align: center
+						line-height: 11px
+						top: 4px
+				input[type=checkbox]:checked + label:before
+					content: "\2713"
+					border: 1px solid #31a5e7
+		.radio-wrap
+			.radio
+				label
+					display: inline-block
+					cursor: pointer
+					position: relative
+					padding-left: 32px
+					font-size: 15px
+				input[type=radio]
+					display: none
+				label
+					&:before 
+						content: ""
+						display: inline-block
+						width: 14px
+						height: 14px
+						position: absolute
+						left: 2px
+						top: 5px
+						border-radius: 50%
+						border: 1px solid #31a5e7
+				input[type=radio]:checked + label:before
+					content: "\2022"
+					color: #31a5e7
+					font-size: 24px
+					text-align: center
+					line-height: 12px
+		.switcher-wrap
+			padding-right: 41px
+			.switch-on
+				margin-top: 10px
+			.switch-on, .switch-off
+				.onoffswitch-checkbox
+					display: none
+				.onoffswitch-label
+					position: relative
+					padding-left: 70px
+					cursor: pointer
+					font-weight: 400 
+					&:after 
+						content: ""
+						display: block
+						overflow: hidden
+						cursor: pointer
+						height: 20px
+						padding: 0
+						line-height: 20px
+						border: 2px solid #999999
+						border-radius: 20px
+						background-color: #F1999D
+						transition: background-color 0.3s ease-in
+						width: 47px
+						position: absolute
+						left: 0
+						top: 0
+					&:before
+						content: ""
+						display: block
+						width: 20px
+						margin: 0px
+						height: 20px
+						background: #FFFFFF
+						position: absolute
+						left: 0
+						top: 0
+						z-index: 1
+						border: 2px solid #999999
+						border-radius: 20px
+						transition: all 0.3s ease-in 0s
+				.onoffswitch-checkbox:checked + .onoffswitch-label:after
+					background-color: #30BE46
+				.onoffswitch-checkbox:checked + .onoffswitch-label:after,
+				.onoffswitch-checkbox:checked + .onoffswitch-label:before
+					border-color: #30BE46
+				.onoffswitch-checkbox:checked + .onoffswitch-label:before
+					left: 30px
+	.stars-wrap
+		margin-top: 33px
+		text-align: center
+		font-family: 'opensans' 
+		font-size: 15px
+		font-weight: 400 
+		.stars
+			&:first-child
+				margin-bottom: 17px
+				.rating-container
+					margin-right: 18px
+			&:last-child
+				margin-bottom: 72px
+				.rating-container
+					margin-right: 13px
+			.rating-container
+				display: inline-block
+				font-size: 1em
+				letter-spacing: 1px
+				.filled-stars
+					color: #E5AA64
+	.owl-carousel.owl-theme.owl-loaded.owl-drag
+		margin-top: 16px
+		.owl-nav
+			.owl-prev
+				left: -67px
+			.owl-next
+				right: -67px
+			button
+				position: absolute
+				top: 106px
+				font-size: 25px
+				width: 42px
+				height: 42px
+				text-align: center
+				border: 1px solid #dadada
+				transition: all .25s ease
+				&:hover
+					color: #0049B0
+					border: 1px solid #0049B0
+		.owl-dots
+			text-align: center
+			margin-top: 31px
+			button 
+				background-repeat: no-repeat 
+				background-size:  contain
+				width: 77px
+				height: 77px
+				border-radius: 50% 
+				border: 2px solid transparent
+				margin-right: 16px
+				&:focus
+					outline: none
+				&:nth-child(1)
+					background-image: url('../img/AbominableChewbacca-SWT.png')
+				&:nth-child(2)
+					background-image: url('../img/maxresdefault-0658-CE15-B370.png')
+				&:nth-child(3)
+					background-image: url('../img/Yoda_SWSB.png')
+				&:nth-child(4)
+					background-image: url('../img/imageload.png')
+				&.active
+					border: 2px solid #0049b0
+		.carousel-item
+			border: 1px solid #EBEBEB
+			height: 232px
+			margin-top: 20px
+			img
+				width: 270px
+				height: 270px
+				margin: 0 auto
+				margin-top: -19px
+			.review-block
+				padding: 45px 30px 45px 10px
+				font-family: 'MyriadProRegular'
+				font-size: 16px 
+				font-weight: 400
+				.review
+					color: #808080
+					text-align: left
+					line-height: 23px
+				.username
+					font-size: 20px
+					font-weight: 700
+					color: #303030
+					text-transform: uppercase
+					letter-spacing: 0.2px
+					margin-top: 20px 
+
+.s-map
+	margin-top: 98px
+	#map
+		height: 455px
+		
+.footer-tabled
+	display: none
+	
+footer
+	font-family: 'roboto' 
+	font-size: 16px
+	color: #202020
+	padding-top: 50px
+	margin-bottom: 70px
+	background-color: #F4F5F7 
+	ul
+		padding: 0
+		margin-left: -5px
+		li
+			list-style-type: none
+			margin-bottom: 18px
+			white-space: nowrap
+			&:first-child
+				font-family: 'robotoBold' 
+				color: #0046AF
+			a
+				color: #202020
+				&:hover, &:focus
+					font-family: 'robotoBold' 
+					color: #202020
+					text-decoration: none
+		&.social-links
+			li:not(:first-child)
+				display: inline-block
+				margin: 0
+				text-align: center
+				background-color: #1A1A1A 
+				margin-right: 5px
+				border-radius: 2px
+				a
+					width: 40px
+					height: 35px
+					display: block
+					&:hover
+						background-color: #0046AF
+				i
+					color: #FFF
+					line-height: 40px
+					font-size: 18px
+
+					
+@import "media"

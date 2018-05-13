@@ -1,0 +1,259 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1024px)
+
+	body 
+		.container
+			max-width: 748px
+			padding: 0
+		.col-md-3
+			padding-left: 11px
+			padding-right: 11px
+		img
+			max-width: 100%
+		 
+	.header-desktop, .footer-desktop
+		display: none
+	
+	header
+		.header-tabled
+			display: block
+			z-index: 9999 
+			.container:nth-child(2)
+				.row
+					width: 100%
+					margin: 0
+			.search
+				padding-top: 0
+			.logo
+				padding: 0
+		.hamburger
+			background: none
+			position: absolute
+			color: #0049B0
+			border: 0
+			font-size: 1.4em
+			font-weight: bold
+			cursor: pointer
+			outline: none
+			z-index: 10000000000000
+		.cross
+			background: none
+			position: absolute
+			color: #0049B0
+			border: 0
+			font-size: 3em
+			font-weight: bold
+			cursor: pointer
+			outline: none
+			z-index: 10000000000000
+			margin-top: -10px
+		.mob-menu
+			z-index: 1000000
+			width: 100%
+			text-align: left
+			margin-top: 23px
+			ul
+				margin: 0
+				padding: 0
+				list-style-type: none
+				list-style-image: none
+				li 
+					display: block 
+					border-bottom: #fff 1px solid
+					background-color: #f4f5f7  
+					&:hover
+						display: block 
+					a
+						color: #202020
+						padding: 13px 36px
+						display: block
+						font-weight: 700
+						text-transform: uppercase 
+	
+	.s-body
+		.buttons-wrap
+			padding-left: 0
+			button
+				margin-right: 10px
+		.row
+			width: 100%
+			&:nth-child(2)
+				.col-md-6
+					width: 100%
+				.col-md-offset-3
+					margin-left: 0
+			&:nth-child(4)
+				.col-md-8
+					width: 100%
+				.col-md-offset-2
+					margin-left: 0
+				.carousel-item
+					.row
+						width: 100%
+	
+	.s-map
+		display: none
+	
+	footer
+		margin-top: 60px
+		.footer-tabled
+			display: block
+			.social-links
+				text-align: center
+				margin-bottom: 50px
+				li:not(:first-child)
+					margin-right: 20px
+
+
+		
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	body .container
+		padding-left: 15px
+		padding-right: 15px
+		.row
+			max-width: 320px
+			margin: 0 auto
+		.owl-nav
+			display: none
+		.search:not(.search-mob-wrap)
+			button
+				width: auto
+				height: auto
+				color: #0049B0
+				background-color: #FFF
+			.cross-search
+				background: none
+				position: absolute
+				color: #0049B0
+				border: 0
+				font-size: 3em
+				font-weight: bold
+				cursor: pointer
+				outline: none
+				z-index: 10000000000000
+				margin-top: -10px
+		.search-mob-wrap
+			margin-top: 20px
+			button 
+				right: 9px
+	.s-body
+		margin-top: 20px
+		.inputs-wrap
+			display: block
+			.switcher-wrap
+				padding-right: 0
+			.checkbox-wrap
+				padding-left: 0
+				.checkbox
+					label
+						margin-left: 9px
+					label:before
+						left: 0
+			> div:not(:last-child)
+				margin-bottom: 30px
+		.buttons-wrap
+			margin-top: 30px
+			text-align: left
+			button
+				margin-bottom: 20px
+		.owl-carousel.owl-theme.owl-loaded.owl-drag
+			.carousel-item
+				height: auto
+				.review-block
+					padding-left: 15px
+					padding-right: 15px
+					padding-top: 20px
+					padding-bottom: 15px
+					> p
+						padding-left: 15px
+				.row > div:first-child
+					margin-bottom: 20px
+			.owl-dots
+				margin-top: 0
+				display: flex
+				justify-content: space-between
+				button
+					height: 49px
+	
+	footer
+		padding-top: 30px
+		margin-top: 45px
+		margin-bottom: 0
+		.container
+			padding: 0
+			.row
+				width: 100%
+				> div
+					padding: 0
+		ul:not(.social-links)
+			margin: 0
+			width: 100%
+			li
+				display: none
+				padding: 10px 0px 10px 50px
+				border-bottom: #fff 1px solid
+				&:first-child
+					color: #202020
+					display: block
+					border-bottom: #fff 1px solid
+					padding: 10px 0px 10px 15px
+					margin: 0
+					&.active
+						color: #0046B0
+						&:after
+							content: "\f077"
+					&:after
+						content: "\f078"
+						font-family: 'fontawesome' 
+						position: absolute
+						right: 15px
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
