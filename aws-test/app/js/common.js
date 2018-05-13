@@ -3,7 +3,7 @@ $(function() {
 var posMenu = $('.menu nav').offset().top;
 var posTabled = $('.header-tabled').offset().top;
 $(window).scroll(function() {
-	if($(window).width() > '320') {
+	if($(window).width() > '768') {
 		if($(this).scrollTop() >= posMenu) {
 			var hh = $('header').outerHeight(true);
 			$('header').css('height', hh);
@@ -65,17 +65,7 @@ $('.owl-carousel').owlCarousel({
     navSpeed: 500,
     dots: true,
     dotsSpeed: 500,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:1
-        }
-    }
+    items: 1
 });
 
 $(window).ready(function(){
@@ -138,7 +128,7 @@ $( ".cross-search" ).click(function() {
 
 });
 
-if($(window).width() <= '320') {
+if($(window).width() <= '768') {
 	$('footer ul:not(.social-links) .li-first').click(function() {
 
 		$(this).toggleClass('active');

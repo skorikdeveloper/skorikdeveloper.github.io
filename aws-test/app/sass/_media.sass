@@ -119,7 +119,77 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	body .container
+		.search:not(.search-mob-wrap)
+			input
+				display: none
+			button
+				width: auto
+				height: auto
+				color: #0049B0
+				background-color: #FFF
+			.cross-search
+				background: none
+				position: absolute
+				color: #0049B0
+				border: 0
+				font-size: 3em
+				font-weight: bold
+				cursor: pointer
+				outline: none
+				z-index: 10000000000000
+				margin-top: -10px
+	.search-mob-wrap
+		margin-top: 20px
+		button 
+			right: 9px
+	.s-body
+		.owl-carousel.owl-theme.owl-loaded.owl-drag
+			.owl-nav
+				display: none
+			.carousel-item
+				height: auto
+				.review-block
+					padding-left: 15px
+					padding-right: 15px
+					padding-top: 20px
+					padding-bottom: 15px
+					> p
+						padding-left: 15px
+				.row > div:first-child
+					margin-bottom: 20px
+	footer
+		padding-top: 30px
+		margin-top: 45px
+		margin-bottom: 0
+		.container
+			padding: 0
+			.row
+				width: 100%
+				> div
+					padding: 0
+		ul:not(.social-links)
+			margin: 0
+			width: 100%
+			li
+				display: none
+				padding: 10px 0px 10px 50px
+				border-bottom: #fff 1px solid
+				&:first-child
+					color: #202020
+					display: block
+					border-bottom: #fff 1px solid
+					padding: 10px 0px 10px 15px
+					margin: 0
+					&.active
+						color: #0046B0
+						&:after
+							content: "\f077"
+					&:after
+						content: "\f078"
+						font-family: 'fontawesome' 
+						position: absolute
+						right: 15px
 
 
 /* Extra Small Devices, Phones */
@@ -135,8 +205,6 @@
 		.row
 			max-width: 320px
 			margin: 0 auto
-		.owl-nav
-			display: none
 		.search:not(.search-mob-wrap)
 			button
 				width: auto
